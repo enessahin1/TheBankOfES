@@ -39,8 +39,8 @@ export default class StyleSheetFactory {
       },
       profileImage: {
         borderRadius: 400 / 2,
-        width: 35,
-        height: 35,
+        width: NewSize(fontSize = 25, height = height),
+        height: NewSize(fontSize = 25, height = height),
         marginTop: '15%',
         marginRight: '5%',
         backgroundColor: 'red'
@@ -53,7 +53,7 @@ export default class StyleSheetFactory {
         justifyContent: 'space-around',
         alignSelf: 'center',
         borderRadius: 10,
-        marginTop: '3%',
+        marginTop: NewSize(fontSize=7, height=height),
         alignItems: "center",
         shadowColor: "#000",
         shadowOffset: {
@@ -70,7 +70,7 @@ export default class StyleSheetFactory {
         backgroundColor: 'white',
         alignSelf: "center",
         borderRadius: 10,
-        marginTop: '3%',
+        marginTop: NewSize(fontSize=7, height=height),
         shadowColor: "#000",
         shadowOffset: {
           width: 0,

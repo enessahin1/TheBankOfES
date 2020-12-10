@@ -37,7 +37,7 @@ export default function HomePage() {
                             <Text style={StyleSheetFactory.getSheet(SCREEN_HEIGHT).headerSubText}>Today Mon , 17 Sep</Text>
                         </View>
                     </View>
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '10%' }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '5%' }}>
                         <ManyCard svgName={'wallet'} label={'Walled Balance'} cash={'345.45'} sticker={'Fund Walled'} />
                         <ManyCard svgName={'onenote'} label={'Donated Amounth'} cash={'1,345.45'} sticker={'Donate Now'} />
                     </View>
@@ -63,10 +63,10 @@ export default function HomePage() {
                     </View>
                     <View style={StyleSheetFactory.getSheet(SCREEN_HEIGHT).scrollView}>
                         <View style={{ width: '90%', alignContent: 'center', alignSelf: 'center' }}>
-                            <Text style={{marginTop: '3%'}}>What do you want to prepare for?</Text>
+                            <Text style={{marginTop: NewSize(fontSize=5, height=SCREEN_HEIGHT), fontSize:NewSize(fontSize=10, height=SCREEN_HEIGHT)}}>What do you want to prepare for?</Text>
                         </View>
                         <View>
-                            <ScrollView style={{ height: '90%', marginTop: '3%'}} showsVerticalScrollIndicator={false}>
+                            <ScrollView style={{ height: NewSize(fontSize=200, height=SCREEN_HEIGHT), marginTop: NewSize(fontSize=5, height=SCREEN_HEIGHT)}} showsVerticalScrollIndicator={false}>
                                 <View style={{flexDirection: 'row', justifyContent: 'space-evenly'}}>
                                     <RequestCard svgName="apple" label={"Apple"}/>
                                     <RequestCard svgName="json" label={"Odian"}/>

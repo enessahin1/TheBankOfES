@@ -52,15 +52,12 @@ export default function ManyCard({ svgName, label, cash, sticker }) {
             backgroundColor: '#ecf6ef',
             justifyContent: 'center',
             alignItems: 'center'
-            
         },
 
         stickerStyle: {
             color: '#38a560',
             fontSize: NewSize(fontSize=10, height=SCREEN_HEIGHT)
         }
-
-
     })
 
     return (

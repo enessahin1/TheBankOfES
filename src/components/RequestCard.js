@@ -15,7 +15,7 @@ export default function RequestCard({ svgName, label }) {
                     <View>
                         <Fontisto
                             name={svgName}
-                            style={{ fontSize: 35 }}
+                            style={{ fontSize: NewSize(fontSize=23, height=deviceHeight) }}
                             color="white"
                         />
                     </View>
@@ -33,7 +33,7 @@ class StyleSheetFactory {
         return StyleSheet.create({
             container: {
                 width: '30%',
-                height: NewSize(fontSize = 85, height = height),
+                height: NewSize(fontSize = 75, height = height),
                 backgroundColor: 'white',
                 borderRadius: windowWidth / 25,
                 shadowColor: "#000",
@@ -43,7 +43,7 @@ class StyleSheetFactory {
                 borderRadius: 15,
                 backgroundColor: '#d8eddf',
                 width: '100%',
-                height: '90%',
+                height: NewSize(fontSize=70, height=height),
                 flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center'
@@ -51,7 +51,7 @@ class StyleSheetFactory {
 
             labelStyle: {
                 color: '#3d3a59',
-                fontSize: 11,
+                fontSize: NewSize(fontSize = 8, height = height),
                 alignItems: 'center',
                 fontWeight: 'bold'
             },
