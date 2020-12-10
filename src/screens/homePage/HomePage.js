@@ -9,7 +9,6 @@ import RequestCard from '../../components/RequestCard'
 import { NewSize } from '../../utils/sizeColculater'
 Icon.loadFont()
 
-
 export default function HomePage() {
     const SCREEN_HEIGHT = Dimensions.get('window').height
     return (
