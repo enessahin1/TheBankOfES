@@ -1,10 +1,11 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet , Dimensions} from 'react-native'
 import Icon from 'react-native-vector-icons/Fontisto'
+import { NewSize } from '../utils/sizeColculater'
 Icon.loadFont()
 
 export default function ArrowButton({ name, width, height, radius, size }) {
-
+    const deviceHeight = Dimensions.get('window').height
     const styles = StyleSheet.create({
         container: {
             width: width,
@@ -24,7 +25,7 @@ export default function ArrowButton({ name, width, height, radius, size }) {
         },
 
         iconStyle: {
-            fontSize: size,
+            fontSize: NewSize(fontSize= size, height=deviceHeight),
             fontWeight: 'bold'
         }
     })

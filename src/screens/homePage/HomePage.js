@@ -19,8 +19,8 @@ export default function HomePage() {
                     <View style={StyleSheetFactory.getSheet(SCREEN_HEIGHT).container}>
                         <WavyHeader
                             customStyles={StyleSheetFactory.getSheet(SCREEN_HEIGHT).svgCurve}
-                            customHeight={295}
-                            customTop={250}
+                            customHeight={NewSize(fontSize=190, height= SCREEN_HEIGHT)}
+                            customTop={NewSize(fontSize=162, height= SCREEN_HEIGHT)}
                             customBgColor="#38a560"
                             customWavePattern="M0,32L120,69.3C240,107,480,181,720,181.3C960,181,1200,107,1320,69.3L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
                         />
@@ -57,7 +57,7 @@ export default function HomePage() {
                                 width={'200%'}
                                 height={'55%'}
                                 radius={5}
-                                size={30}
+                                size={20}
                             />
                         </View>
                     </View>
