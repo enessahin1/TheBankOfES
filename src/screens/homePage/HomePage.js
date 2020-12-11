@@ -9,7 +9,7 @@ import RequestCard from '../../components/RequestCard'
 import { NewSize } from '../../utils/sizeColculater'
 Icon.loadFont()
 
-export default function HomePage() {
+export default function HomePage({ navigation }) {
     const SCREEN_HEIGHT = Dimensions.get('window').height
     return (
         <>
@@ -19,8 +19,8 @@ export default function HomePage() {
                     <View style={StyleSheetFactory.getSheet(SCREEN_HEIGHT).container}>
                         <WavyHeader
                             customStyles={StyleSheetFactory.getSheet(SCREEN_HEIGHT).svgCurve}
-                            customHeight={NewSize(fontSize=190, height= SCREEN_HEIGHT)}
-                            customTop={NewSize(fontSize=162, height= SCREEN_HEIGHT)}
+                            customHeight={NewSize(fontSize = 190, height = SCREEN_HEIGHT)}
+                            customTop={NewSize(fontSize = 162, height = SCREEN_HEIGHT)}
                             customBgColor="#38a560"
                             customWavePattern="M0,32L120,69.3C240,107,480,181,720,181.3C960,181,1200,107,1320,69.3L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
                         />
@@ -44,10 +44,10 @@ export default function HomePage() {
                     <View style={StyleSheetFactory.getSheet(SCREEN_HEIGHT).sposorshipAvailable}>
                         <View>
                             <View style={{ marginBottom: '5%' }}>
-                                <Text style={{ fontSize: NewSize(fontSize=13, height=SCREEN_HEIGHT), color: 'white', fontWeight: 'bold' }}>Sponsorship Available</Text>
+                                <Text style={{ fontSize: NewSize(fontSize = 13, height = SCREEN_HEIGHT), color: 'white', fontWeight: 'bold' }}>Sponsorship Available</Text>
                             </View>
                             <View>
-                                <Text style={{ fontSize: NewSize(fontSize=10, height=SCREEN_HEIGHT), color: 'white' }}>Can apply for sponsorship</Text>
+                                <Text style={{ fontSize: NewSize(fontSize = 10, height = SCREEN_HEIGHT), color: 'white' }}>Can apply for sponsorship</Text>
                             </View>
                         </View>
 
@@ -63,21 +63,21 @@ export default function HomePage() {
                     </View>
                     <View style={StyleSheetFactory.getSheet(SCREEN_HEIGHT).scrollView}>
                         <View style={{ width: '90%', alignContent: 'center', alignSelf: 'center' }}>
-                            <Text style={{marginTop: NewSize(fontSize=5, height=SCREEN_HEIGHT), fontSize:NewSize(fontSize=10, height=SCREEN_HEIGHT)}}>What do you want to prepare for?</Text>
+                            <Text style={{ marginTop: NewSize(fontSize = 5, height = SCREEN_HEIGHT), fontSize: NewSize(fontSize = 10, height = SCREEN_HEIGHT) }}>What do you want to prepare for?</Text>
                         </View>
                         <View>
-                            <ScrollView style={{ height: NewSize(fontSize=200, height=SCREEN_HEIGHT), marginTop: NewSize(fontSize=5, height=SCREEN_HEIGHT)}} showsVerticalScrollIndicator={false}>
-                                <View style={{flexDirection: 'row', justifyContent: 'space-evenly'}}>
-                                    <RequestCard svgName="apple" label={"Apple"}/>
-                                    <RequestCard svgName="json" label={"Odian"}/>
-                                    <RequestCard svgName="messenger" label={"Messenger"}/>
+                            <ScrollView style={{ height: NewSize(fontSize = 200, height = SCREEN_HEIGHT), marginTop: NewSize(fontSize = 5, height = SCREEN_HEIGHT) }} showsVerticalScrollIndicator={false}>
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
+                                    <RequestCard svgName="apple" label={"Apple"} />
+                                    <RequestCard svgName="json" label={"Odian"} />
+                                    <RequestCard svgName="messenger" label={"Messenger"} />
                                 </View>
-                                <View style={{flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '3%'}}>
-                                    <RequestCard svgName="origin" label={"Origin"}/>
-                                    <RequestCard svgName="redux" label={"Redux"}/>
-                                    <RequestCard svgName="swift" label={"Phoenix"}/>
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '3%' }}>
+                                    <RequestCard svgName="origin" label={"Origin"} />
+                                    <RequestCard svgName="redux" label={"Redux"} />
+                                    <RequestCard svgName="swift" label={"Phoenix"} />
                                 </View>
-                                
+
                             </ScrollView>
                         </View>
                     </View>
